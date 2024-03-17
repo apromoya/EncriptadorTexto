@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Se encarga de encerrar los textos y darle el tamaño a cada uno-->
+    <div id="contenedor">
+        <!-- Se va encargar de recibir la informacion -->
+        <div id="principal">
+            <textarea 
+                name="texto"
+                id="texto"
+                class="redondeado"
+                type="text" 
+                placeholder="Ingresa El texto Aqui"></textarea>
+        </div>
+        <!-- Se va encargar de devolver la informacion de desencriptar  y de encriptar-->
+        <div id="sidebar"> 
+            <textarea 
+                name="texttarea" 
+                class="receptor"
+                id="texttarea"
+                placeholder="Aqui va salir resultado"
+                ></textarea>
+            <!-- Debe que copiar la informacion del contendor text tarea con id texttarea-->
+            <button onclick="portapapeles('texttarea')" type="button" id="copair">Copiar</button>
+        </div>
+    </div> 
+    <!-- Diseño de los botones-->
+    <div id="botones">
+        <div class="diseñoEncr">
+            <button type="button" id="encriptar"  onclick="enCRIptar()">ENCRIPTAR</button>
+        </div>
+        <div class="diseñoDese">
+            <button type="button" id="desencriptar"  onclick="deSENcriptar()">DESENCRIPTAR</button>   
+
+        </div>
+    </div>
+    <div id="creditos">
+        <p>Oscar Moya - Alias Escarabajo</p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
